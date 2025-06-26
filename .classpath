@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="inventory-service/src/main/java"/>
+	<classpathentry kind="src" path="orchestrator-service/src/main/java"/>
+	<classpathentry kind="src" path="order-service/src/main/java"/>
+	<classpathentry kind="src" path="payment-service/src/main/java"/>
+	<classpathentry kind="src" path="product-validation-service/src/main/java"/>
+	<classpathentry kind="lib" path="inventory-service/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="orchestrator-service/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="order-service/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="payment-service/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="product-validation-service/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
