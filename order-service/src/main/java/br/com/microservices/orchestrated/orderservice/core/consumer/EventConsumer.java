@@ -21,7 +21,7 @@ public class EventConsumer {
             topics = "${spring.kafka.topic.notify-ending}"
     )
 
-    public void consumeNotifyEndongTopic(String payload){
+    public void consumeNotifyEndingTopic(String payload){
 
         log.info("Received ending notification event {} from notify-ending topic", payload);
         var event = jsonUtil.toEvent(payload);

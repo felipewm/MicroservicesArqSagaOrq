@@ -21,7 +21,7 @@ public class SagaProducer {
             log.info("SagaProducer sending event to topic {} with data {} ", startSagaTopic, payload);
             kafkaTemplate.send(startSagaTopic, payload);
         } catch (Exception e) {
-            log.error("Error tryng to send data to topic {} with data {}", startSagaTopic, payload, e);
+            log.error("Error trying to send data to topic {} with data {}", startSagaTopic, payload, e);
         }
     }
 

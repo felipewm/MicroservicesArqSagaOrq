@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63cdcc30-c115-4b49-b8fd-d24d38666a44" name="Changes" comment="" />
+    <list default="true" id="63cdcc30-c115-4b49-b8fd-d24d38666a44" name="Changes" comment="servicos, repositories e controlers">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/br/com/microservices/orchestrated/inventoryservice/config/kafka/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/br/com/microservices/orchestrated/inventoryservice/config/kafka/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orchestrator-service/src/main/java/br/com/microservices/orchestrated/orchestratorservice/config/kafka/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/orchestrator-service/src/main/java/br/com/microservices/orchestrated/orchestratorservice/config/kafka/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/config/kafka/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/config/kafka/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/consumer/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/consumer/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/controller/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/document/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/document/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/document/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/document/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/producer/SagaProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/producer/SagaProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/repository/EventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/repository/EventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/service/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/config/kafka/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/config/kafka/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/config/kafka/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/config/kafka/KafkaConfig.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +59,7 @@
       <list>
         <option value="Enum" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -51,6 +67,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;felipewm&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/felipewm/MicroservicesArqSagaOrq.git&quot;,
+    &quot;accountId&quot;: &quot;d4b22983-ea7e-437a-ac4b-cbe196ca8908&quot;
+  }
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -83,6 +111,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.InventoryServiceApplication.executor": "Run",
     "Spring Boot.OrchestratorServiceApplication.executor": "Run",
     "Spring Boot.OrderServiceApplication.executor": "Run",
@@ -99,7 +128,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "vcs.log",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -112,11 +141,11 @@
       <recent name="C:\Cursos\Arq microservicos udemy\base_files\inventory-service\src\main\java\br\com\microservices\orchestrated\inventoryservice\core\dto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.microservices.orchestrated.orderservice.core.repository" />
       <recent name="br.com.microservices.orchestrated.inventoryservice.core.consumer" />
       <recent name="br.com.microservices.orchestrated.paymentservice.core.consumer" />
       <recent name="br.com.microservices.orchestrated.productvalidationservice.core.consumer" />
       <recent name="br.com.microservices.orchestrated.orchestratorservice.core.consumer" />
-      <recent name="br.com.microservices.orchestrated.orchestratorservice.core.producer" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -129,7 +158,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
+  <component name="RunManager" selected="Spring Boot.OrchestratorServiceApplication">
     <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.microservices.orchestrated.orderservice.OrderServiceApplication" />
       <extension name="coverage">
@@ -265,8 +294,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
       </set>
     </attachedChunks>
   </component>
@@ -298,8 +327,21 @@
       <workItem from="1749740803921" duration="3878000" />
       <workItem from="1749911590280" duration="9756000" />
       <workItem from="1750022102794" duration="10763000" />
-      <workItem from="1750948891308" duration="10265000" />
+      <workItem from="1750948891308" duration="10470000" />
+      <workItem from="1751029008848" duration="401000" />
+      <workItem from="1751029677755" duration="12120000" />
+      <workItem from="1751057287678" duration="2637000" />
+      <workItem from="1751285799239" duration="4935000" />
     </task>
+    <task id="LOCAL-00001" summary="servicos, repositories e controlers">
+      <option name="closed" value="true" />
+      <created>1751057018692</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751057018692</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,5 +383,30 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="servicos, repositories e controlers" />
+    <option name="LAST_COMMIT_MESSAGE" value="servicos, repositories e controlers" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/service/EventService.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/producer/SagaProducer.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/br/com/microservices/orchestrated/orderservice/core/producer/SagaProducer.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

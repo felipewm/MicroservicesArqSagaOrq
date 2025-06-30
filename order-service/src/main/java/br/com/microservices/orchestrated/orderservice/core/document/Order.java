@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Document(collation = "order")
+@Document(collection  = "order")
 public class Order {
 
     @Id

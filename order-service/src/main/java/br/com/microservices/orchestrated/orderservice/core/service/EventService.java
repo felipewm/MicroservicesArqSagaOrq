@@ -6,8 +6,8 @@ import br.com.microservices.orchestrated.orderservice.core.dto.EventFilters;
 import br.com.microservices.orchestrated.orderservice.core.repository.EventRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.kafka.common.errors.InvalidRequestException;
 import org.springframework.stereotype.Service;
+
 
 import java.time.LocalDateTime;
 import java.util.List;
