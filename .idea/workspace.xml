@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63cdcc30-c115-4b49-b8fd-d24d38666a44" name="Changes" comment="correções de erros">
-      <change beforePath="$PROJECT_DIR$/orchestrator-service/src/main/java/br/com/microservices/orchestrated/orchestratorservice/config/kafka/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/orchestrator-service/src/main/java/br/com/microservices/orchestrated/orchestratorservice/config/kafka/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/model/Validation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/repository/ValidationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/service/ProductValidationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-validation-service/src/main/resources/import.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/br/com/microservices/orchestrated/inventoryservice/core/enums/ESagaStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/br/com/microservices/orchestrated/inventoryservice/core/enums/ESagaStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orchestrator-service/src/main/java/br/com/microservices/orchestrated/orchestratorservice/core/enums/ESagaStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/orchestrator-service/src/main/java/br/com/microservices/orchestrated/orchestratorservice/core/enums/ESagaStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/enums/ESagaStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/enums/ESagaStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/consumer/ProductValidationConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/consumer/ProductValidationConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/dto/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/dto/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/enums/ESagaStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/enums/ESagaStatus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,48 +89,51 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2y2toJ85S80YNBCUaH5mJftChhs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.OrderServiceApplication.executor": "Run",
-    "Gradle.Build inventory-service.executor": "Run",
-    "Gradle.Build orchestrator-service.executor": "Run",
-    "Gradle.Build order-service.executor": "Run",
-    "Gradle.Build payment-service.executor": "Run",
-    "Gradle.Build product-validation-service.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.Tests in 'order-service'.executor": "Run",
-    "Gradle.Tests in 'product-validation-service'.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.InventoryServiceApplication.executor": "Run",
-    "Spring Boot.OrchestratorServiceApplication.executor": "Run",
-    "Spring Boot.OrderServiceApplication.executor": "Run",
-    "Spring Boot.PaymentServiceApplication.executor": "Run",
-    "Spring Boot.ProductValidationServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Cursos/Arq microservicos udemy/base_files",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "vcs.log",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build inventory-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build orchestrator-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build order-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build payment-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build product-validation-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'order-service'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'product-validation-service'.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.InventoryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrchestratorServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PaymentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductValidationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Cursos/Arq microservicos udemy/base_files&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.log&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Cursos\Arq microservicos udemy\base_files\inventory-service\src\main\java\br\com\microservices\orchestrated\inventoryservice\config\exception" />
@@ -145,7 +160,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrchestratorServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ProductValidationServiceApplication">
     <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.microservices.orchestrated.orderservice.OrderServiceApplication" />
       <extension name="coverage">
@@ -318,7 +333,8 @@
       <workItem from="1751029008848" duration="401000" />
       <workItem from="1751029677755" duration="12120000" />
       <workItem from="1751057287678" duration="2637000" />
-      <workItem from="1751285799239" duration="5093000" />
+      <workItem from="1751285799239" duration="17811000" />
+      <workItem from="1751372011611" duration="3345000" />
     </task>
     <task id="LOCAL-00001" summary="servicos, repositories e controlers">
       <option name="closed" value="true" />
@@ -336,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751293002579</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="correções de erros">
+      <option name="closed" value="true" />
+      <created>1751293102674</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751293102674</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
