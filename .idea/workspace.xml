@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63cdcc30-c115-4b49-b8fd-d24d38666a44" name="Changes" comment="product-validation service + correções">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/product-validation-service.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/product-validation-service.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/enums/EPaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/model/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/repository/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/service/PaymentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/service/ProductValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/service/ProductValidationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +48,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Record" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -120,7 +122,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "vcs.log",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -150,7 +152,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductValidationServiceApplication">
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
     <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.microservices.orchestrated.orderservice.OrderServiceApplication" />
       <extension name="coverage">
@@ -324,7 +326,7 @@
       <workItem from="1751029677755" duration="12120000" />
       <workItem from="1751057287678" duration="2637000" />
       <workItem from="1751285799239" duration="17811000" />
-      <workItem from="1751372011611" duration="11062000" />
+      <workItem from="1751372011611" duration="19034000" />
     </task>
     <task id="LOCAL-00001" summary="servicos, repositories e controlers">
       <option name="closed" value="true" />
@@ -358,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751384841093</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="product-validation service + correções">
+      <option name="closed" value="true" />
+      <created>1751465385942</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751465385942</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +399,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
