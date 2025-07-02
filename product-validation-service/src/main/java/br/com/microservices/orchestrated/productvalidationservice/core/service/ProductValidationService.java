@@ -27,7 +27,6 @@ public class ProductValidationService {
 
     private final JsonUtil jsonUtil;
     private final KafkaProducer kafkaProducer;
-    private final ProductRepository repository;
     private final ValidationRepository validationRepository;
     private final ProductRepository productRepository;
 
@@ -46,7 +45,8 @@ public class ProductValidationService {
 
     private void checkCurrentValidation(Event event) {
             validateProductsInformed(event);
-        if (validationRepository.existsByOrderIdAndTransactionId(event.getOrderId(), event.getTransactionId())) {
+        if (validationRepository.existsByOrderIdAndTransactionId(
+                event.getOrderId(), event.getTransactionId())) {
             throw new ValidationException("There is another transactionId for this validation!");
         }
         event.getPayload().getProducts().forEach(product -> {
