@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63cdcc30-c115-4b49-b8fd-d24d38666a44" name="Changes" comment="product-validation service + correções">
-      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/enums/EPaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/model/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/service/PaymentService.java" afterDir="false" />
+    <list default="true" id="63cdcc30-c115-4b49-b8fd-d24d38666a44" name="Changes" comment="payment service">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/payment-service.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/payment-service.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/consumer/PaymentConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/consumer/PaymentConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/dto/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/dto/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/service/PaymentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,44 +90,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.OrderServiceApplication.executor": "Run",
-    "Gradle.Build inventory-service.executor": "Run",
-    "Gradle.Build orchestrator-service.executor": "Run",
-    "Gradle.Build order-service.executor": "Run",
-    "Gradle.Build payment-service.executor": "Run",
-    "Gradle.Build product-validation-service.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.Tests in 'order-service'.executor": "Run",
-    "Gradle.Tests in 'product-validation-service'.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.InventoryServiceApplication.executor": "Run",
-    "Spring Boot.OrchestratorServiceApplication.executor": "Run",
-    "Spring Boot.OrderServiceApplication.executor": "Run",
-    "Spring Boot.PaymentServiceApplication.executor": "Run",
-    "Spring Boot.ProductValidationServiceApplication.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Cursos/Arq microservicos udemy/base_files",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build inventory-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build orchestrator-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build order-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build payment-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build product-validation-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'order-service'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'product-validation-service'.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.InventoryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrchestratorServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PaymentServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductValidationServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Cursos/Arq microservicos udemy/base_files&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Cursos\Arq microservicos udemy\base_files\inventory-service\src\main\java\br\com\microservices\orchestrated\inventoryservice\config\exception" />
@@ -152,7 +154,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
+  <component name="RunManager" selected="Spring Boot.PaymentServiceApplication">
     <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.microservices.orchestrated.orderservice.OrderServiceApplication" />
       <extension name="coverage">
@@ -326,7 +328,11 @@
       <workItem from="1751029677755" duration="12120000" />
       <workItem from="1751057287678" duration="2637000" />
       <workItem from="1751285799239" duration="17811000" />
-      <workItem from="1751372011611" duration="19034000" />
+      <workItem from="1751372011611" duration="25196000" />
+      <workItem from="1751550605238" duration="3446000" />
+      <workItem from="1751632769697" duration="6743000" />
+      <workItem from="1751643439749" duration="1183000" />
+      <workItem from="1751650716738" duration="1317000" />
     </task>
     <task id="LOCAL-00001" summary="servicos, repositories e controlers">
       <option name="closed" value="true" />
@@ -368,7 +374,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751465385942</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="payment service">
+      <option name="closed" value="true" />
+      <created>1751482511202</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751482511202</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +429,8 @@
     <MESSAGE value="servicos, repositories e controlers" />
     <MESSAGE value="correções de erros" />
     <MESSAGE value="product-validation service + correções" />
-    <option name="LAST_COMMIT_MESSAGE" value="product-validation service + correções" />
+    <MESSAGE value="payment service" />
+    <option name="LAST_COMMIT_MESSAGE" value="payment service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -439,6 +454,24 @@
           <url>file://$PROJECT_DIR$/product-validation-service/src/main/java/br/com/microservices/orchestrated/productvalidationservice/core/service/ProductValidationService.java</url>
           <line>111</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/service/PaymentService.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/consumer/PaymentConsumer.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/payment-service/src/main/java/br/com/microservices/orchestrated/paymentservice/core/service/PaymentService.java</url>
+          <line>148</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
